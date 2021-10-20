@@ -3,7 +3,7 @@ package studentmodule;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Properties;
-import java.util.concurrent.TimeUnit;
+
 
 import org.openqa.selenium.WebDriver;
 import studentmodule.loginObj;
@@ -17,7 +17,7 @@ this.driver=driver;
 public void login1() throws IOException
 {
 Properties p=new Properties();
-FileInputStream f1=new FileInputStream("/Users/aumapathi/eclipse-workspace/Automation1/src/main/java/Resources/input.properties");
+FileInputStream f1=new FileInputStream("/Users/aumapathi/git/repository/Automation1/src/main/java/Resources/input.properties");
 p.load(f1);
 
 driver.get("https://test.qualicoach.org/?");

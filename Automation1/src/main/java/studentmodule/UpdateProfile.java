@@ -1,5 +1,7 @@
 package studentmodule;
 
+import java.io.IOException;
+
 //import java.io.IOException;
 
 import org.openqa.selenium.By;
@@ -15,9 +17,9 @@ public UpdateProfile(WebDriver driver) {
 this.driver=driver;
 }
 
-public void update() {
-	LoginPage l=new LoginPage(driver);
-	l.GenericLogin1("user88","User@9146");
+public void update() throws IOException {
+	 login l=new login(driver);
+		l.login1();
 
 driver.manage().window().maximize();
 driver.findElement(By.xpath("//*[@class='userbutton']")).click();

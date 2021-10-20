@@ -5,7 +5,7 @@
     <classes>
       <class name="studentmodule.Studenttest">
         <methods>
-          <include name="EnrollChecktest"/>
+          <include name="feedbackformtest"/>
         </methods>
       </class> <!-- studentmodule.Studenttest -->
     </classes>

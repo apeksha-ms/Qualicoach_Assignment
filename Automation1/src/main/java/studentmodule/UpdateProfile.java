@@ -28,5 +28,6 @@ driver.findElement(By.xpath("//a[contains(text(),'Edit profile')]")).click();
 driver.findElement(By.xpath("//*[@id='id_firstname']")).clear();
 driver.findElement(By.xpath("//*[@id='id_firstname']")).sendKeys("Test141");
 driver.findElement(By.xpath("//*[@value='Update profile']")).click();
+driver.close();
 }
 }

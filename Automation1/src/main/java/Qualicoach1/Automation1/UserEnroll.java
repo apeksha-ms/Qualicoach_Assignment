@@ -38,7 +38,7 @@ public class UserEnroll extends Gotoadmin {
 		FileInputStream f1=new FileInputStream("/Users/aumapathi/eclipse-workspace/Automation1/src/main/java/Resources/input.properties");
 		p.load(f1);
 		LoginPage l=new LoginPage(driver);
-		l.GenericLogin("admin73","Admin@6100");
+		l.GenericLogin("admin63","Admin@6101");
 		getDashboard();
 		getAdminstration();
 		

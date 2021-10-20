@@ -29,15 +29,15 @@ public class CreateCourse extends Gotoadmin {
 		FileInputStream f1=new FileInputStream("/Users/aumapathi/eclipse-workspace/Automation1/src/main/java/Resources/input.properties");
 		p.load(f1);
 		LoginPage l=new LoginPage(driver);
-		l.GenericLogin("admin73","Admin@6100");
+		l.GenericLogin("admin63","Admin@6101");
 		getDashboard();
 		getAdminstration();
 		
 		driver.findElement(courses).click();
 		driver.findElement(manage).click();
 		driver.findElement(createNewuser).click();
-		driver.findElement(By.id("id_fullname")).sendKeys("Automate qualicoach");
-		driver.findElement(By.id("id_shortname")).sendKeys("qualicoach ");
+		driver.findElement(By.id("id_fullname")).sendKeys("eclipse-qualicoach assignment");
+		driver.findElement(By.id("id_shortname")).sendKeys("qualicoach");
 		WebElement drop1=driver.findElement(By.id("id_startdate_day"));
 		Select dropdown1 = new Select(drop1);
 		dropdown1.selectByValue("6");
@@ -49,7 +49,7 @@ public class CreateCourse extends Gotoadmin {
 		dropdown3.selectByValue("2021");
 		driver.findElement(By.cssSelector("input#id_enddate_enabled")).click();
 		System.out.println(driver.findElement(By.cssSelector("input#id_enddate_enabled")).isEnabled());
-		driver.findElement(By.id("id_idnumber")).sendKeys("501");
+		driver.findElement(By.id("id_idnumber")).sendKeys("600");
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,500)");
 		driver.findElement(By.cssSelector("div#id_summary_editoreditable")).click();

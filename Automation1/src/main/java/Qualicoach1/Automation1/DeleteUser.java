@@ -17,12 +17,12 @@ public class DeleteUser extends Gotoadmin {
 	}
 	public void getDelete() {
 		 LoginPage l=new LoginPage(driver);
-			l.GenericLogin("admin73","Admin@6100");
+			l.GenericLogin("admin63","Admin@6101");
 			getDashboard();
 			getAdminstration();
 			driver.findElement(users).click();
 			driver.findElement(Edit).click();
-			driver.findElement(textbox).sendKeys("Veena K M");
+			driver.findElement(textbox).sendKeys("userauto");
 			driver.findElement(filter).click();
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			js.executeScript("window.scrollBy(0,1000)");

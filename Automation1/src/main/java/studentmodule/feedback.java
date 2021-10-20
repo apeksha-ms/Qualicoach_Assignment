@@ -21,10 +21,11 @@ l.login1();
 JavascriptExecutor js = (JavascriptExecutor) driver;
 js.executeScript("window.scrollBy(0,600)");
 Actions a = new Actions(driver);
-WebElement move = driver.findElement(By.xpath("//div[@cat-id='3'] /a /p[text()='Selenium Beginners']"));
+WebElement move = driver.findElement(By.xpath("//p[text()='Perl']"));
 a.moveToElement(move).click().build().perform();
 driver.findElement(By.xpath("//div[@class='content'] / div[@id='accordion'] / div[7] "));
 driver.findElement(By.xpath("//div[@class='content'] / div[@id='accordion'] / div[7] / div[1] "));
 driver.findElement(By.linkText("Answer the questions"));
+driver.close();
 }
 }

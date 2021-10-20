@@ -19,10 +19,11 @@ l.login1();
 JavascriptExecutor js = (JavascriptExecutor) driver;
 js.executeScript("window.scrollBy(0,600)");
 Actions a = new Actions(driver);
-WebElement move = driver.findElement(By.xpath("//div[@cat-id='3'] /a /p[text()='Selenium Beginners']"));
+WebElement move = driver.findElement(By.xpath("//p[text()='Perl']"));
 a.moveToElement(move).click().build().perform();
 driver.findElement(By.xpath("//*[@aria-controls='collapse7']")).click();
 driver.findElement(By.xpath("//div[contains(text(),'Selenium Beg Certificate')]")).click();
 driver.findElement(By.xpath("//*[@type='submit']")).click();
+driver.close();
 }
 }

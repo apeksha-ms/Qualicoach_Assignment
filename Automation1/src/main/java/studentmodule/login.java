@@ -27,5 +27,6 @@ loginObj l = new loginObj(driver);
 l.uName().sendKeys(p.getProperty("uname"));
 l.pwd().sendKeys(p.getProperty("pwd"));
 l.ok().click();
+driver.close();
 }
 }

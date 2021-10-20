@@ -1,8 +1,9 @@
 package Qualicoach1.Automation1;
 
+import org.testng.annotations.Test;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+
 
 
 public class VerifyLogin{

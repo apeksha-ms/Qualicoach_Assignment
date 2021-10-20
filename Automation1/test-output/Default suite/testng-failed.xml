@@ -5,7 +5,12 @@
     <classes>
       <class name="studentmodule.Studenttest">
         <methods>
+          <include name="EnrollChecktest"/>
+          <include name="quiztest"/>
+          <include name="UpdateProfiletest"/>
+          <include name="loginCheck"/>
           <include name="feedbackformtest"/>
+          <include name="Downloadtest"/>
         </methods>
       </class> <!-- studentmodule.Studenttest -->
     </classes>

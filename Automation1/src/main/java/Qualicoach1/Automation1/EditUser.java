@@ -24,12 +24,12 @@ public class EditUser extends Gotoadmin{
 
 	public void getEditUser() {
 		LoginPage l=new LoginPage(driver);
-		l.GenericLogin("admin73","Admin@6100");
+		l.GenericLogin("admin63","Admin@6101");
 		getDashboard();
 		getAdminstration();
 		driver.findElement(users).click();
 		driver.findElement(Edit).click();
-		driver.findElement(textbox).sendKeys("Demo User");
+		driver.findElement(textbox).sendKeys("User Demo");
 		driver.findElement(filter).click();
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("window.scrollBy(0,1000)");

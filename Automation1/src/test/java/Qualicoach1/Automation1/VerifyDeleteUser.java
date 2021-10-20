@@ -1,7 +1,7 @@
 package Qualicoach1.Automation1;
 
-import org.openqa.selenium.WebDriver;
 import org.testng.annotations.Test;
+import org.openqa.selenium.WebDriver;
 
 public class VerifyDeleteUser {
 	Initialization init=new Initialization();

@@ -24,6 +24,7 @@ a.moveToElement(move).click().build().perform();
 driver.findElement(By.id("next-activity-link")).click();
 driver.findElement(By.xpath("//*[@value='Attempt quiz now']")).click();
 driver.findElement(By.xpath("//*[@value='Start attempt']")).click();
+driver.close();
 }
 
 }

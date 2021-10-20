@@ -14,7 +14,7 @@ public class Download extends Gotoadmin{
 public void getDownload(){
 	
 	 LoginPage l=new LoginPage(driver);
-		l.GenericLogin("admin73","Admin@6100");
+		l.GenericLogin("admin63","Admin@6101");
 		getDashboard();
 	 
 	 	
